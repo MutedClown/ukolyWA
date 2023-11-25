@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulář pro evidenci milenek/milenců</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        width: 400px;
+      }
+
+      .frame {
+        border: 2px solid #4caf50;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .table-input {
+        width: 100%;
+        margin-bottom: 10px;
+        border-collapse: collapse;
+      }
+
+      .table-input th,
+      .table-input td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .table-input th {
+        background-color: #f2f2f2;
+      }
+
+      input[type="text"],
+      input[type="url"],
+      input[type="date"],
+      input[type="tel"],
+      input[type="file"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      input[type="submit"] {
+        width: calc(100% - 20px);
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <h2>Formulář pro evidenci milenek/milenců</h2>
+        <form action="submit_form.php" method="post">
+          <table class="table-input">
+            <tr>
+              <th><label for="jmeno">Jméno:</label></th>
+              <td><input type="text" id="jmeno" name="jmeno" required /></td>
+            </tr>
+            <tr>
+              <th><label for="prijmeni">Příjmení:</label></th>
+              <td>
+                <input type="text" id="prijmeni" name="prijmeni" required />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="foto">Fotka:</label></th>
+              <td>
+                <input
+                  type="file"
+                  id="foto"
+                  name="foto"
+                  accept="image/*"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="datum_narozeni">Datum narození:</label></th>
+              <td>
+                <input
+                  type="date"
+                  id="datum_narozeni"
+                  name="datum_narozeni"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="telefon">Telefonní číslo:</label></th>
+              <td><input type="tel" id="telefon" name="telefon" required /></td>
+            </tr>
+            <tr>
+              <th><label for="parametr1">Zájmy a koníčky:</label></th>
+              <td>
+                <input type="text" id="parametr1" name="parametr1" required />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="parametr2">Zvláštní preference:</label></th>
+              <td>
+                <input type="text" id="parametr2" name="parametr2" required />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="parametr3">Zaměstnání:</label></th>
+              <td>
+                <input type="text" id="parametr3" name="parametr3" required />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="parametr4">Vzdělání:</label></th>
+              <td>
+                <input type="text" id="parametr4" name="parametr4" required />
+              </td>
+            </tr>
+            <tr>
+              <th><label for="parametr5">Jazyky:</label></th>
+              <td>
+                <input type="text" id="parametr5" name="parametr5" required />
+              </td>
+            </tr>
+          </table>
+
+          <input type="submit" value="Odeslat" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
