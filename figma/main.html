@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./slide-169-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+
+    <style>
+    body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --font-size-81xl: 100px;
+  --font-size-31xl: 50px;
+  --font-size-29xl: 48px;
+  --font-size-131xl: 150px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-cornflowerblue: #8296ff;
+  --color-darkorange: #ff7a00;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-lg: 18px;
+  --gap-0: 0px;
+  --gap-57xl: 76px;
+
+  /* Paddings */
+  --padding-10xl: 29px;
+  --padding-63xl: 82px;
+  --padding-85xl: 104px;
+  --padding-7xl: 26px;
+  --padding-33xl: 52px;
+  --padding-22xl: 41px;
+  --padding-xl: 20px;
+  --padding-3xs: 10px;
+  --padding-sm: 14px;
+  --padding-4xs: 9px;
+  --padding-4xl: 23px;
+  --padding-295xl: 314px;
+
+  /* Border radiuses */
+  --br-236xl: 255px;
+}
+    .op {
+        color: var(--color-white);
+      }
+      .top {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: inherit;
+        color: var(--color-darkorange);
+      }
+      .star-component-icon {
+        height: 100px;
+        width: 100px;
+        position: relative;
+      }
+      .online-courses {
+        margin: 0;
+        position: relative;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: inherit;
+        white-space: nowrap;
+      }
+      .top-text {
+        position: absolute;
+        top: 82px;
+        left: 261px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 9px;
+        font-size: var(--font-size-29xl);
+      }
+      .main {
+        position: relative;
+      }
+      .frame-main-courses-price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 var(--padding-4xl) 0 0;
+      }
+      .courses {
+        position: relative;
+      }
+      .frame-main-courses-price1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 var(--padding-4xl) 0 0;
+      }
+      .price {
+        position: relative;
+      }
+      .frame-main-courses-price2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 var(--padding-4xl) 0 0;
+      }
+      .contacts {
+        position: relative;
+      }
+      .sign-up-text-child {
+        align-self: stretch;
+        width: 124px;
+        position: relative;
+        border-radius: var(--br-236xl);
+        border: 1px solid var(--color-black);
+        box-sizing: border-box;
+        display: none;
+      }
+      .login {
+        width: 72px;
+        position: relative;
+        font-size: var(--font-size-11xl);
+        font-family: var(--font-inter);
+        color: var(--color-white);
+        text-align: left;
+        display: inline-block;
+      }
+      .frame-login,
+      .frame-login-child,
+      .sign-up-text {
+        border: 1px solid var(--color-black);
+        border-radius: var(--br-236xl);
+      }
+      .frame-login-child {
+        height: 55px;
+        width: 124px;
+        position: relative;
+        box-sizing: border-box;
+        display: none;
+      }
+      .frame-login,
+      .sign-up-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .frame-login {
+        justify-content: flex-start;
+        padding: var(--padding-4xs) var(--padding-10xl) var(--padding-3xs)
+          var(--padding-4xl);
+        z-index: 2;
+      }
+      .sign-up-text {
+        cursor: pointer;
+        padding: 0;
+        background-color: transparent;
+        justify-content: center;
+        z-index: 1;
+      }
+      .sign-up {
+        position: relative;
+        font-size: var(--font-size-11xl);
+        font-family: var(--font-inter);
+        color: var(--color-white);
+        text-align: left;
+        white-space: nowrap;
+      }
+      .learn-easily-text,
+      .learn-easily-text-child {
+        border: 1px solid var(--color-black);
+        border-radius: var(--br-236xl);
+      }
+      .learn-easily-text-child {
+        height: 55px;
+        width: 148px;
+        position: relative;
+        box-sizing: border-box;
+        display: none;
+      }
+      .learn-easily-text {
+        cursor: pointer;
+        padding: var(--padding-3xs) var(--padding-sm) var(--padding-4xs)
+          var(--padding-xl);
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 1;
+      }
+      .courses-frame-main,
+      .login-frame {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0 14px;
+      }
+      .courses-frame-main {
+        position: absolute;
+        top: 58px;
+        left: 855px;
+        align-items: center;
+        gap: 0 34px;
+        font-size: var(--font-size-11xl);
+      }
+      .courses-frame {
+        align-self: stretch;
+        height: 182px;
+        position: relative;
+        text-align: left;
+        font-size: var(--font-size-131xl);
+        color: var(--color-white);
+        font-family: var(--font-inter);
+      }
+      .learn {
+        margin: 0;
+      }
+      .easily {
+        color: var(--color-darkorange);
+      }
+      .easily,
+      .with-us {
+        margin: 0;
+      }
+      .learn-easily-with-container {
+        margin: 0;
+        position: relative;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: inherit;
+      }
+      .framework {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 var(--padding-xl) 74px;
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+      .we-are-not,
+      .we-have-a {
+        margin: 0;
+      }
+      .we-are-not-container {
+        position: relative;
+      }
+      .we-are-not-a-typical-school-th {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+      }
+      .slide-169-1,
+      .we-are-not-a-typical-school-co {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        box-sizing: border-box;
+      }
+      .we-are-not-a-typical-school-co {
+        flex-direction: row;
+        padding: 0 var(--padding-10xl);
+        max-width: 100%;
+        font-size: var(--font-size-11xl);
+        color: var(--color-white);
+      }
+      .slide-169-1 {
+        width: 100%;
+        position: relative;
+        background: linear-gradient(180deg, #171645, #01000a);
+        overflow: hidden;
+        flex-direction: column;
+        padding: var(--padding-10xl) var(--padding-63xl) 324px var(--padding-85xl);
+        gap: 18px 0;
+        letter-spacing: normal;
+        text-align: left;
+        font-size: var(--font-size-81xl);
+        color: var(--color-cornflowerblue);
+        font-family: var(--font-inter);
+      }
+      @media screen and (max-width: 1050px) {
+        .slide-169-1 {
+          padding-left: var(--padding-33xl);
+          padding-right: var(--padding-22xl);
+          box-sizing: border-box;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .learn-easily-with-container {
+          font-size: var(--font-size-31xl);
+        }
+        .we-are-not-container {
+          font-size: var(--font-size-5xl);
+        }
+      }
+      @media screen and (max-width: 750px) {
+        .slide-169-1 {
+          padding-left: var(--padding-7xl);
+          box-sizing: border-box;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .learn-easily-with-container {
+          font-size: var(--font-size-11xl);
+        }
+        .framework {
+          padding-bottom: 48px;
+          box-sizing: border-box;
+        }</style>
+  </head>
+  <body>
+    <div class="slide-169-1">
+      <header class="courses-frame">
+        <h1 class="top">
+          <span>T</span>
+          <span class="op">op</span>
+        </h1>
+        <div class="top-text">
+          <img
+            class="star-component-icon"
+            loading="lazy"
+            alt=""
+            src="./public/star-1.svg"
+          />
+
+          <h2 class="online-courses">Online courses</h2>
+        </div>
+        <div class="courses-frame-main">
+          <div class="frame-main-courses-price">
+            <div class="main">Main</div>
+          </div>
+          <div class="frame-main-courses-price1">
+            <div class="courses">Courses</div>
+          </div>
+          <div class="frame-main-courses-price2">
+            <div class="price">Price</div>
+          </div>
+          <div class="contacts">Contacts</div>
+          <div class="login-frame">
+            <button class="sign-up-text">
+              <div class="sign-up-text-child"></div>
+              <div class="frame-login">
+                <div class="login">Login</div>
+                <div class="frame-login-child"></div>
+              </div>
+            </button>
+            <button class="learn-easily-text">
+              <div class="sign-up">Sign up</div>
+              <div class="learn-easily-text-child"></div>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="framework">
+        <h1 class="learn-easily-with-container">
+          <p class="learn">Learn</p>
+          <p class="easily">easily</p>
+          <p class="with-us">with us</p>
+        </h1>
+      </div>
+      <div class="we-are-not-a-typical-school-co">
+        <div class="we-are-not-a-typical-school-th">
+          <div class="we-are-not-container">
+            <p class="we-are-not">
+              We are not a typical school that teaches according to canons and
+              standards.
+            </p>
+            <p class="we-have-a">
+              We have a unique and unusual gamified approach to learning.
+            </p>
+          </div>
+        </div>
